@@ -4,17 +4,20 @@ import Nav from './Nav';
 import Home from './Home';
 import About from './About';
 import Shop from './Shop';
-import Item from './Item';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1> MY APP </h1>
       <Nav />
-      <Home />
-      <About />
-      <Shop />
-      <Item />
+      <Router>
+        <Routes>
+          <Route path = "/" element = {<Home />} />
+          <Route path = "/about" element = {<About />} />
+          <Route path = "/shop" element = {<Shop />} />
+        </Routes>
+      </Router>
+    
     </div>
   );
 }

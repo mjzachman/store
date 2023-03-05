@@ -1,0 +1,25 @@
+.nav {
+    background-color: rgb(58, 58, 119);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+h1 {
+    width: 500px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+a {
+    color: white;
+}
